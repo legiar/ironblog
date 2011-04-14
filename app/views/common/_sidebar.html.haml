@@ -1,0 +1,165 @@
+%ul#widgets
+  %li.widget.widget_paypal_donations
+    / Begin PayPal Donations by http://wpstorm.net/
+    %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post"}
+      .paypal-donations
+        %input{:name => "cmd", :type => "hidden", :value => "_donations"}/
+        %input{:name => "business", :type => "hidden", :value => "matthew.mattoon@allanglesit.com"}/
+        %input{:name => "return", :type => "hidden", :value => "http://blog.allanglesit.com/donations/thanks-for-your-donation/"}/
+        %input{:name => "item_name", :type => "hidden", :value => "Support Continued Documentation on IT From All Angles"}/
+        %input{:name => "item_number", :type => "hidden", :value => "SidebarDonateWidget"}/
+        %input{:name => "currency_code", :type => "hidden", :value => "USD"}/
+        %input{:alt => "PayPal - The safer, easier way to pay online.", :name => "submit", :src => "http://blog.allanglesit.com/wp-content/uploads/2011/03/button_donate_blue-e1300407631666.png", :type => "image"}/
+        %img{:alt => "", :height => "1", :src => "https://www.paypal.com/en_US/i/scr/pixel.gif", :width => "1"}/
+    / End PayPal Donations
+  %li.widget.widget_categories
+    %h3 Categories
+    %ul
+      %li.cat-item.cat-item-18
+        %a{:href => "http://blog.allanglesit.com/topics/general-information/", :title => "View all posts filed under General Information"} General Information
+        (6)
+      %li.cat-item.cat-item-3
+        %a{:href => "http://blog.allanglesit.com/topics/how-to/", :title => "View all posts filed under How To"} How To
+        (29)
+      %li.cat-item.cat-item-60
+        %a{:href => "http://blog.allanglesit.com/topics/platforms/", :title => "View all posts filed under Platforms"} Platforms
+        (33)
+        %ul.children
+          %li.cat-item.cat-item-64
+            %a{:href => "http://blog.allanglesit.com/topics/platforms/infrastructure-platforms/", :title => "View all posts filed under Infrastructure"} Infrastructure
+            (2)
+            %ul.children
+              %li.cat-item.cat-item-38
+                %a{:href => "http://blog.allanglesit.com/topics/platforms/infrastructure-platforms/dns/", :title => "View all posts filed under DNS"} DNS
+                (2)
+          %li.cat-item.cat-item-62
+            %a{:href => "http://blog.allanglesit.com/topics/platforms/operating-systems/", :title => "View all posts filed under Operating Systems"} Operating Systems
+            (9)
+            %ul.children
+              %li.cat-item.cat-item-49
+                %a{:href => "http://blog.allanglesit.com/topics/platforms/operating-systems/solaris/", :title => "View all posts filed under Solaris"} Solaris
+                (9)
+          %li.cat-item.cat-item-63
+            %a{:href => "http://blog.allanglesit.com/topics/platforms/storage-platforms/", :title => "View all posts filed under Storage"} Storage
+            (9)
+            %ul.children
+              %li.cat-item.cat-item-37
+                %a{:href => "http://blog.allanglesit.com/topics/platforms/storage-platforms/lvm2/", :title => "View all posts filed under LVM2"} LVM2
+                (2)
+              %li.cat-item.cat-item-48
+                %a{:href => "http://blog.allanglesit.com/topics/platforms/storage-platforms/zfs/", :title => "View all posts filed under ZFS"} ZFS
+                (7)
+          %li.cat-item.cat-item-61
+            %a{:href => "http://blog.allanglesit.com/topics/platforms/virtualization-platforms/", :title => "View all posts filed under Virtualization"} Virtualization
+            (21)
+            %ul.children
+              %li.cat-item.cat-item-29
+                %a{:href => "http://blog.allanglesit.com/topics/platforms/virtualization-platforms/hyperv/", :title => "View all posts filed under Hyper-V"} Hyper-V
+                (10)
+              %li.cat-item.cat-item-30
+                %a{:href => "http://blog.allanglesit.com/topics/platforms/virtualization-platforms/linux-kvm/", :title => "View all posts filed under Linux-KVM"} Linux-KVM
+                (11)
+      %li.cat-item.cat-item-9
+        %a{:href => "http://blog.allanglesit.com/topics/scriptcode/", :title => "View all posts filed under Script or Code"} Script or Code
+        (1)
+  %li.widget.widget_tag_cloud
+    %h3 Tags
+    .tagcloud
+      %a.tag-link-57{:href => "http://blog.allanglesit.com/tags/active-directory/", :style => "font-size: 8pt;", :title => "1 topic"} active-directory
+      %a.tag-link-19{:href => "http://blog.allanglesit.com/tags/bind/", :style => "font-size: 10.5714285714pt;", :title => "2 topics"} bind
+      %a.tag-link-15{:href => "http://blog.allanglesit.com/tags/centos/", :style => "font-size: 10.5714285714pt;", :title => "2 topics"} centos
+      %a.tag-link-65{:href => "http://blog.allanglesit.com/tags/clones/", :style => "font-size: 8pt;", :title => "1 topic"} clones
+      %a.tag-link-17{:href => "http://blog.allanglesit.com/tags/compile-linux/", :style => "font-size: 10.5714285714pt;", :title => "2 topics"} compile-linux
+      %a.tag-link-59{:href => "http://blog.allanglesit.com/tags/data-integrity/", :style => "font-size: 12.2857142857pt;", :title => "3 topics"} data-integrity
+      %a.tag-link-13{:href => "http://blog.allanglesit.com/tags/debian/", :style => "font-size: 14.8571428571pt;", :title => "5 topics"} debian
+      %a.tag-link-23{:href => "http://blog.allanglesit.com/tags/debootstrap/", :style => "font-size: 8pt;", :title => "1 topic"} debootstrap
+      %a.tag-link-54{:href => "http://blog.allanglesit.com/tags/dladm/", :style => "font-size: 10.5714285714pt;", :title => "2 topics"} dladm
+      %a.tag-link-5{:href => "http://blog.allanglesit.com/tags/has-code/", :style => "font-size: 8pt;", :title => "1 topic"} has-code
+      %a.tag-link-6{:href => "http://blog.allanglesit.com/tags/hyper-v/", :style => "font-size: 19.1428571429pt;", :title => "11 topics"} hyper-v
+      %a.tag-link-52{:href => "http://blog.allanglesit.com/tags/ipadm/", :style => "font-size: 10.5714285714pt;", :title => "2 topics"} ipadm
+      %a.tag-link-7{:href => "http://blog.allanglesit.com/tags/jumbo-frames/", :style => "font-size: 8pt;", :title => "1 topic"} jumbo-frames
+      %a.tag-link-39{:href => "http://blog.allanglesit.com/tags/ksm/", :style => "font-size: 8pt;", :title => "1 topic"} ksm
+      %a.tag-link-22{:href => "http://blog.allanglesit.com/tags/kvm/", :style => "font-size: 19.1428571429pt;", :title => "11 topics"} kvm
+      %a.tag-link-40{:href => "http://blog.allanglesit.com/tags/kvm-img/", :style => "font-size: 10.5714285714pt;", :title => "2 topics"} kvm-img
+      %a.tag-link-24{:href => "http://blog.allanglesit.com/tags/libvirt/", :style => "font-size: 10.5714285714pt;", :title => "2 topics"} libvirt
+      %a.tag-link-11{:href => "http://blog.allanglesit.com/tags/linux-integration-components/", :style => "font-size: 18pt;", :title => "9 topics"} linux-integration-components
+      %a.tag-link-25{:href => "http://blog.allanglesit.com/tags/lvm/", :style => "font-size: 13.7142857143pt;", :title => "4 topics"} lvm
+      %a.tag-link-27{:href => "http://blog.allanglesit.com/tags/lxc/", :style => "font-size: 8pt;", :title => "1 topic"} lxc
+      %a.tag-link-21{:href => "http://blog.allanglesit.com/tags/networking/", :style => "font-size: 12.2857142857pt;", :title => "3 topics"} networking
+      %a.tag-link-51{:href => "http://blog.allanglesit.com/tags/nwam/", :style => "font-size: 8pt;", :title => "1 topic"} nwam
+      %a.tag-link-16{:href => "http://blog.allanglesit.com/tags/oel/", :style => "font-size: 10.5714285714pt;", :title => "2 topics"} oel
+      %a.tag-link-8{:href => "http://blog.allanglesit.com/tags/powershell/", :style => "font-size: 8pt;", :title => "1 topic"} powershell
+      %a.tag-link-41{:href => "http://blog.allanglesit.com/tags/qcow2/", :style => "font-size: 8pt;", :title => "1 topic"} qcow2
+      %a.tag-link-46{:href => "http://blog.allanglesit.com/tags/remote-management/", :style => "font-size: 8pt;", :title => "1 topic"} remote-management
+      %a.tag-link-14{:href => "http://blog.allanglesit.com/tags/rhel/", :style => "font-size: 10.5714285714pt;", :title => "2 topics"} rhel
+      %a.tag-link-58{:href => "http://blog.allanglesit.com/tags/samba/", :style => "font-size: 8pt;", :title => "1 topic"} samba
+      %a.tag-link-55{:href => "http://blog.allanglesit.com/tags/smbadm/", :style => "font-size: 8pt;", :title => "1 topic"} smbadm
+      %a.tag-link-42{:href => "http://blog.allanglesit.com/tags/snapshots/", :style => "font-size: 10.5714285714pt;", :title => "2 topics"} snapshots
+      %a.tag-link-50{:href => "http://blog.allanglesit.com/tags/solaris11/", :style => "font-size: 18pt;", :title => "9 topics"} solaris11
+      %a.tag-link-20{:href => "http://blog.allanglesit.com/tags/split-dns/", :style => "font-size: 10.5714285714pt;", :title => "2 topics"} split-dns
+      %a.tag-link-44{:href => "http://blog.allanglesit.com/tags/ssh/", :style => "font-size: 8pt;", :title => "1 topic"} ssh
+      %a.tag-link-26{:href => "http://blog.allanglesit.com/tags/storage/", :style => "font-size: 18.5714285714pt;", :title => "10 topics"} storage
+      %a.tag-link-10{:href => "http://blog.allanglesit.com/tags/ubuntu/", :style => "font-size: 15.8571428571pt;", :title => "6 topics"} ubuntu
+      %a.tag-link-34{:href => "http://blog.allanglesit.com/tags/virt-install/", :style => "font-size: 12.2857142857pt;", :title => "3 topics"} virt-install
+      %a.tag-link-43{:href => "http://blog.allanglesit.com/tags/virt-manager/", :style => "font-size: 8pt;", :title => "1 topic"} virt-manager
+      %a.tag-link-35{:href => "http://blog.allanglesit.com/tags/virtio/", :style => "font-size: 12.2857142857pt;", :title => "3 topics"} virtio
+      %a.tag-link-12{:href => "http://blog.allanglesit.com/tags/virtualization/", :style => "font-size: 22pt;", :title => "18 topics"} virtualization
+      %a.tag-link-45{:href => "http://blog.allanglesit.com/tags/windows/", :style => "font-size: 8pt;", :title => "1 topic"} windows
+      %a.tag-link-47{:href => "http://blog.allanglesit.com/tags/xming/", :style => "font-size: 8pt;", :title => "1 topic"} xming
+      %a.tag-link-56{:href => "http://blog.allanglesit.com/tags/zfs-2/", :style => "font-size: 16.5714285714pt;", :title => "7 topics"} zfs
+  %li.widget.widget_archive
+    %h3 Archives
+    %ul
+      %li
+        %a{:href => "http://blog.allanglesit.com/2011/04/", :title => "April 2011"}> April 2011
+        \&nbsp;(6)
+      %li
+        %a{:href => "http://blog.allanglesit.com/2011/03/", :title => "March 2011"}> March 2011
+        \&nbsp;(14)
+      %li
+        %a{:href => "http://blog.allanglesit.com/2011/02/", :title => "February 2011"}> February 2011
+        \&nbsp;(3)
+      %li
+        %a{:href => "http://blog.allanglesit.com/2010/05/", :title => "May 2010"}> May 2010
+        \&nbsp;(2)
+      %li
+        %a{:href => "http://blog.allanglesit.com/2010/03/", :title => "March 2010"}> March 2010
+        \&nbsp;(2)
+      %li
+        %a{:href => "http://blog.allanglesit.com/2009/12/", :title => "December 2009"}> December 2009
+        \&nbsp;(2)
+      %li
+        %a{:href => "http://blog.allanglesit.com/2009/09/", :title => "September 2009"}> September 2009
+        \&nbsp;(1)
+      %li
+        %a{:href => "http://blog.allanglesit.com/2009/07/", :title => "July 2009"}> July 2009
+        \&nbsp;(1)
+      %li
+        %a{:href => "http://blog.allanglesit.com/2009/05/", :title => "May 2009"}> May 2009
+        \&nbsp;(2)
+  %li.widget.widget_recent_entries
+    %h3 Recent Posts
+    %ul
+      %li
+        %a{:href => "http://blog.allanglesit.com/2011/04/zfs-delegate-zfs-permissions/", :title => "ZFS: Delegate ZFS Permissions"} ZFS: Delegate ZFS Permissions
+      %li
+        %a{:href => "http://blog.allanglesit.com/2011/04/zfs-clone-management/", :title => "ZFS: Clone Management"} ZFS: Clone Management
+      %li
+        %a{:href => "http://blog.allanglesit.com/2011/04/zfs-snapshot-management/", :title => "ZFS: Snapshot Management"} ZFS: Snapshot Management
+      %li
+        %a{:href => "http://blog.allanglesit.com/2011/04/so-you-want-to-learn-zfs-part-three/", :title => "So You Want to Learn ZFS Part Three"} So You Want to Learn ZFS Part Three
+      %li
+        %a{:href => "http://blog.allanglesit.com/2011/04/so-you-want-to-learn-zfs-part-two/", :title => "So You Want to Learn ZFS Part Two"} So You Want to Learn ZFS Part Two
+      %li
+        %a{:href => "http://blog.allanglesit.com/2011/04/so-you-want-to-learn-zfs-part-one/", :title => "So You Want to Learn ZFS Part One"} So You Want to Learn ZFS Part One
+      %li
+        %a{:href => "http://blog.allanglesit.com/2011/03/solaris-11-join-ad-domain-for-samba/", :title => "Solaris 11: Join AD Domain for Samba"} Solaris 11: Join AD Domain for Samba
+      %li
+        %a{:href => "http://blog.allanglesit.com/2011/03/solaris-11-network-configuration-advanced/", :title => "Solaris 11: Network Configuration Advanced"} Solaris 11: Network Configuration Advanced
+      %li
+        %a{:href => "http://blog.allanglesit.com/2011/03/solaris-11-network-configuration-basics/", :title => "Solaris 11: Network Configuration Basics"} Solaris 11: Network Configuration Basics
+      %li
+        %a{:href => "http://blog.allanglesit.com/2011/03/linux-kvm-migrating-hyper-v-vhd-images-to-kvm/", :title => "Linux-KVM: Migrating Hyper-V VHD Images to KVM"} Linux-KVM: Migrating Hyper-V VHD Images to KVM
+/ showcase 2
+/ sidebar END
+.fixed

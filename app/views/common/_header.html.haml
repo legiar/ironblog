@@ -1,0 +1,61 @@
+.caption
+  %h1#title
+    %a{:href => "http://blog.allanglesit.com/", :title => "Authentication : Security : Virtualization : Messaging : Disaster Recovery : Replication"} IT From All Angles
+  #tagline Authentication : Security : Virtualization : Messaging : Disaster Recovery : Replication
+/ search box
+%form#search_box{:action => "http://blog.allanglesit.com/", :method => "get"}
+  #searchbox
+    %input#searchtxt.textfield{:name => "s", :type => "text", :value => ""}/
+:javascript
+  //
+      var searchbox = document.getElementById("searchbox");
+      var searchtxt = document.getElementById("searchtxt");
+      var tiptext = "Type text to search here...";
+      if(searchtxt.value == "" || searchtxt.value == tiptext) {
+              searchtxt.className += " searchtip";
+              searchtxt.value = tiptext;
+      }
+      searchtxt.onfocus = function(e) {
+              if(searchtxt.value == tiptext) {
+                      searchtxt.value = "";
+                      searchtxt.className = searchtxt.className.replace(" searchtip", "");
+              }
+      }
+      searchtxt.onblur = function(e) {
+              if(searchtxt.value == "") {
+                      searchtxt.className += " searchtip";
+                      searchtxt.value = tiptext;
+              }
+      }
+  //
+/ navigation START
+%ul#navigation
+  %li.current_page_item
+    %a{:href => "http://blog.allanglesit.com/"} Home
+  %li.page_item.page-item-99
+    %a{:href => "http://blog.allanglesit.com/about/", :title => "About"} About
+  %li.page_item.page-item-361
+    %a{:href => "http://blog.allanglesit.com/contact/", :title => "Contact"} Contact
+  %li.page_item.page-item-338
+    %a{:href => "http://blog.allanglesit.com/donations/", :title => "Donations"} Donations
+  %li#subscribe
+    %a#feed{:href => "http://blog.allanglesit.com/feed/", :rel => "external nofollow", :title => "Subscribe to this blog..."}
+      %img{:alt => "RSS feed", :src => "http://blog.allanglesit.com/wp-content/themes/elegant-box/images/transparent.gif"}/
+    %ul
+      %li.first
+        %a{:href => "http://reader.youdao.com/b.do?url=http://blog.allanglesit.com/feed/", :rel => "external nofollow", :title => "Subscribe with Youdao"} Youdao
+      %li
+        %a{:href => "http://www.xianguo.com/subscribe.php?url=http://blog.allanglesit.com/feed/", :rel => "external nofollow", :title => "Subscribe with Xian Guo"} Xian Guo
+      %li
+        %a{:href => "http://www.zhuaxia.com/add_channel.php?url=http://blog.allanglesit.com/feed/", :rel => "external nofollow", :title => "Subscribe with Zhua Xia"} Zhua Xia
+      %li
+        %a{:href => "http://fusion.google.com/add?feedurl=http://blog.allanglesit.com/feed/", :rel => "external nofollow", :title => "Subscribe with Google"} Google
+      %li
+        %a{:href => "http://add.my.yahoo.com/rss?url=http://blog.allanglesit.com/feed/", :rel => "external nofollow", :title => "Subscribe with My Yahoo!"} My Yahoo!
+      %li
+        %a{:href => "http://www.newsgator.com/ngs/subscriber/subfext.aspx?url=http://blog.allanglesit.com/feed/", :rel => "external nofollow", :title => "Subscribe with newsgator"} newsgator
+      %li
+        %a{:href => "http://www.bloglines.com/sub/http://blog.allanglesit.com/feed/", :rel => "external nofollow", :title => "Subscribe with Bloglines"} Bloglines
+      %li
+        %a{:href => "http://inezha.com/add?url=http://blog.allanglesit.com/feed/", :rel => "external nofollow", :title => "Subscribe with iNezha"} iNezha
+/ navigation END

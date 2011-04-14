@@ -1,0 +1,31 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "IE=EmulateIE7", "http-equiv" => "X-UA-Compatible"}/
+    %title IT From All Angles
+
+    = stylesheet_link_tag 'style'
+    /[if IE]
+      = stylesheet_link_tag 'ie'
+    = stylesheet_link_tag 'default', 'global'
+    = javascript_include_tag 'base', 'menu'
+    
+    /%link#wp-pagenavi-css{:href => "http://blog.allanglesit.com/wp-content/themes/elegant-box/pagenavi-css.css?ver=2.70", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    /%link{:href => "http://blog.allanglesit.com/", :rel => "index", :title => "IT From All Angles"}/
+    /%link{:href => "http://blog.allanglesit.com/wp-content/themes/elegant-box/wp-syntax.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+  %body
+    #header
+      .inner
+        .content
+          = render 'common/header'
+    #container
+      #content
+        #main
+          = yield
+        #sidebar
+          = render 'common/sidebar'
+    #footer
+      .inner
+        .content
+          = render 'common/footer'

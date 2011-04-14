@@ -1,0 +1,35 @@
+%h1 
+  =t('posts.index.title')
+
+%table
+  %thead
+    %tr
+      %th 
+        =t('activerecord.attributes.post.title')
+      %th 
+        =t('activerecord.attributes.post.date')
+      %th 
+        =t('activerecord.attributes.post.teaser')
+      %th 
+        =t('activerecord.attributes.post.body')
+      %th 
+        =t('activerecord.attributes.post.visible')
+      %th 
+        =t('activerecord.attributes.post.user')
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - for post in @posts
+      %tr{ :class => cycle(:odd, :even) }
+        %td= post.title
+        %td= post.date
+        %td= post.teaser
+        %td= post.body
+        %td= post.visible
+        %td= post.user
+        %td= link_to t('show'), post
+        %td= link_to t('edit'), edit_post_path(post)
+        %td= link_to t('destroy'), post, :confirm => I18n.t('confirm_delete'), :method => :delete
+
+%br
+= link_to t('post.new'), new_post_path

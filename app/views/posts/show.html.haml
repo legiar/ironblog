@@ -1,0 +1,20 @@
+%p
+  %strong t('activerecord.attributes.post.title')
+  = @post.title
+%p
+  %strong t('activerecord.attributes.post.date')
+  = @post.date
+%p
+  %strong t('activerecord.attributes.post.teaser')
+  = @post.teaser
+%p
+  %strong t('activerecord.attributes.post.body')
+  = @post.body
+%p
+  %strong t('activerecord.attributes.post.visible')
+  = @post.visible
+%p
+  %strong t('activerecord.attributes.post.user')
+  = @post.user
+
+== #{ link_to t('edit'), edit_post_path(@post) } | #{ link_to t('back'), posts_path }
